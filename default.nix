@@ -15,6 +15,7 @@ in nixexprsLib.channel {
 
   outputOverlays = [
     # nixexprsLib has functions for auto-calling directories
+    (nixexprsLib.auto.pkgs ./pkgs)
     (nixexprsLib.auto.python ./pythonPackages)
     (nixexprsLib.auto.perl ./perlPackages)
 
