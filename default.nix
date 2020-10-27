@@ -3,7 +3,7 @@ let
     debugVerbosity = 9;
   };
 in nixexprsLib.channel {
-  channelName = "infinisil";
+  name = "infinisil";
 
   # Specifies channel dependencies
   # Only the channels listed here are available under self.flox.channels.*
@@ -36,7 +36,7 @@ in nixexprsLib.channel {
   outputOverlays = [
     # nixexprsLib has functions for auto-calling directories
     (nixexprsLib.auto.python ./pythonPackages)
-    #(nixexprsLib.auto.perl ./perlPackages)
+    (nixexprsLib.auto.perl ./perlPackages)
 
     # But users can also define packages directly
     (self: super: {
