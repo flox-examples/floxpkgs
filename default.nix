@@ -1,7 +1,5 @@
 let
-  nixexprsLib = import ../nixexprs-lib/default.nix {
-    debugVerbosity = 9;
-  };
+  nixexprsLib = import <nixexprs-lib>;
 in nixexprsLib.channel {
   name = "infinisil";
 
