@@ -1,27 +1,42 @@
 let
-  nixexprsLib = import <nixexprs-lib> {};
+  nixexprsLib = import ../nixexprs-lib/default.nix {
+    debugVerbosity = 9;
+  };
 in nixexprsLib.channel {
-  # The name of this channel, so it's available at eval time
-  name = "infinisil";
-
-  # Allows specifying nixpkgs overlays
-  nixpkgsOverlays = [
-    # Override ncurses of all nixpkgs derivations to use our own
-    (self: super: {
-      # flox.self points to our own channel
-      ncurses = super.flox.self.ncurses;
-    })
-  ];
+  channelName = "infinisil";
 
   # Specifies channel dependencies
-  inputChannels = [ "chan1" "chan2" ];
+  # Only the channels listed here are available under self.flox.channels.*
+  inputChannels = [ "NixOS" "chan1" "chan2" ];
+
+  # TODO: Should overlays be transitive somehow?
+  #nixpkgsOverlays = [];
+
+  # This config is propagated to all dependent channels
+  # If this repo is used as the root, these values are used
+  # If it's not, the root's values are used
+  # But is that really what we want?
+  # -> Let the user choose whether they want to set a different nixpkgs version
+  #    only for this channel, or also for all dependencies
+  # Wait, because of how hydra works, we *have* to use a single version of each
+  # channel, can't have different ones
+
+  # How about having an overlay tree?
+  # Each transitiveConfigDefaults of each channel is an overlay
+  # If there's a channel dependency chain, each channel in the chain adds their own overlay
+  # This probably causes inf rec problems for channels having a cyclic dependency -> let's not do that
+  # 
+  channelConfig = {
+    defaultPythonVersion = 2;
+    debugVerbosity = 0;
+  };
 
   # Specifies a dependency on the chan1 and chan2 channels
   # This function is called with the resolved
-  outputsOverlays = [
+  outputOverlays = [
     # nixexprsLib has functions for auto-calling directories
     (nixexprsLib.auto.python ./pythonPackages)
-    (nixexprsLib.auto.perl ./perlPackages)
+    #(nixexprsLib.auto.perl ./perlPackages)
 
     # But users can also define packages directly
     (self: super: {
@@ -35,7 +50,9 @@ in nixexprsLib.channel {
       };
 
       # Example of importing a Nix expression from the project source
-      bar = import (self.flox.source "bar" {}) {};
+      #bar = import (self.flox.source "bar" {}) {};
+
+      # Import flox.nix from all given packages
     })
   ];
 }
