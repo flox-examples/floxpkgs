@@ -1,11 +1,6 @@
-let
-  nixexprsLib = import <nixexprs-lib>;
+let nixexprsLib = import <nixexprs-lib>;
 in nixexprsLib.channel {
-  name = "infinisil";
-
-  # Specifies channel dependencies
-  # Channels listed here are available in outputOverlays under flox.channels.<name>
-  inputChannels = [ "other" ];
+  name = "demo";
 
   # The channel config is propagated down to all dependent channels
   # Also means that other channels depending on this one can override this default
