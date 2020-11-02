@@ -1,6 +1,6 @@
-{ flox, perlPackages }:
+{ channels, perlPackages }:
 
-flox.builders.buildPerlPackage {
+channels.flox.buildPerlPackage {
   project = "example-perl";
   buildInputs = [ perlPackages.ModuleInstall ];
   postBuild = "touch $devdoc";
