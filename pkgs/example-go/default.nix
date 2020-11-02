@@ -1,5 +1,5 @@
-{ channels }:
-channels.flox.buildGoModule {
+{ flox }:
+flox.buildGoModule {
   project = "example-go";
   vendorSha256 = null;
 }

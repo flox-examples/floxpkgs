@@ -1,5 +1,5 @@
 import <nixexprs-lib> {
-  name = "demo";
+  name = "example";
 
   auto.toplevel.path = ./pkgs;
 }
