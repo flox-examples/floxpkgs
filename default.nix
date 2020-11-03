@@ -1,4 +1,4 @@
 import <nixexprs-lib> {
-  name = "example";
+  name = "flox-examples";
   topdir = ./.;
 }
