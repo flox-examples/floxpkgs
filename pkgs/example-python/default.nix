@@ -1,4 +1,4 @@
-{ pythonPackages, flox }:
-flox.buildPythonApplication {
+{ flox }:
+flox.pythonPackages.buildPythonApplication {
   project = "example-python";
 }
