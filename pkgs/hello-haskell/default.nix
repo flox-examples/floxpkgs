@@ -1,6 +1,6 @@
 { flox, haskellPackages }:
 flox.haskellPackages.mkDerivation {
-  project = "haskell-executable";
+  project = "hello-haskell";
   libraryHaskellDepends = [
     haskellPackages.haskell-library
   ];

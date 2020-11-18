@@ -1,0 +1,1 @@
+{ linkDotfiles }: linkDotfiles ./home

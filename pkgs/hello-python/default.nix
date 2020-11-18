@@ -1,4 +1,4 @@
 { flox }:
 flox.pythonPackages.buildPythonApplication {
-  project = "example-python";
+  project = "hello-python";
 }
