@@ -1,1 +1,1 @@
-{ linkDotfiles, flox, floxInternal }: linkDotfiles (flox.getSource floxInternal.importingChannelArgs.name "dotfiles" {}).src
+{ flox, floxInternal }: flox.linkDotfiles (flox.getSource floxInternal.importingChannelArgs.name "dotfiles" {}).src
