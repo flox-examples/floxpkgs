@@ -2,7 +2,7 @@
 
 let
   # Prefix for python executable name.
-  pyprefix = "ds-";
+  pyprefix = "ds";
   # Python version to be wrapped.
   python = python3;
   pythonPackages = python3Packages;
