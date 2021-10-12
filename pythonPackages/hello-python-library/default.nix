@@ -1,5 +1,5 @@
-{ flox, appdirs }:
-flox.pythonPackages.buildPythonPackage {
+{ buildPythonPackage, appdirs }:
+buildPythonPackage {
   project = "hello-python-library";
   propagatedBuildInputs = [ appdirs ];
 }

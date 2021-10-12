@@ -1,5 +1,5 @@
-{ flox, haskellPackages }:
-flox.haskellPackages.mkDerivation {
+{ haskellPackages }:
+haskellPackages.mkDerivation {
   project = "hello-haskell";
   libraryHaskellDepends = [
     haskellPackages.hello-haskell-library

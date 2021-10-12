@@ -4,7 +4,7 @@ This example shows a simple way to manage dotfiles in your home directory with F
 
 ## Usage
 
-1. Set up the dependency on the flox-examples channel by following the instructions in [the toplevel Readme](https://github.com/flox-examples/nixexprs#setting-up-a-channel-dependency).
+1. Set up the dependency on the flox-examples channel by following the instructions in [the toplevel Readme](https://github.com/flox-examples/floxpkgs#setting-up-a-channel-dependency).
 2. Install this package with
     ```bash
     $ floxpm install $(nix-build --no-out-link '<flox-examples>' \
@@ -19,11 +19,11 @@ This example shows a simple way to manage dotfiles in your home directory with F
 
 This command sets up all dotfiles declared in the [home](./home) directory. Note that even though there's also a [.bashrc](./home/.bashrc) declared, it didn't establish a link for that, because this user already had a `~/.bashrc`.
 
-If you copy this example into your own nixexprs, you can customize the [home](./home) directory to contain your own dotfiles. So if you wanted to have Flox manage your `~/.bashrc`, you would move that file into the [home](./home) directory and run `setup-dotfiles` again.
+If you copy this example into your own floxpkgs, you can customize the [home](./home) directory to contain your own dotfiles. So if you wanted to have Flox manage your `~/.bashrc`, you would move that file into the [home](./home) directory and run `setup-dotfiles` again.
 
 ## Auto-updating of dotfiles
 
-Once a set of dotfiles are installed, they are updated automatically by just pushing changes to the [home](./home) directory of the nixexprs repository.
+Once a set of dotfiles are installed, they are updated automatically by just pushing changes to the [home](./home) directory of the floxpkgs repository.
 
 ## Adding and removing of dotfiles currently does *not* work
 

@@ -1,5 +1,5 @@
-{ flox, acme-missiles }:
-flox.haskellPackages.mkDerivation {
+{ mkDerivation, acme-missiles }:
+mkDerivation {
   project = "hello-haskell-library";
   libraryHaskellDepends = [
     acme-missiles

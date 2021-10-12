@@ -1,2 +1,2 @@
-{ flox, meta }:
-flox.linkDotfiles (meta.getSource "dotfiles" {}).src
+{ linkDotfiles, meta }:
+linkDotfiles (meta.getSource "dotfiles" {}).src

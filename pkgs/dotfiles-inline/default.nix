@@ -1,1 +1,1 @@
-{ flox }: flox.linkDotfiles ./home
+{ linkDotfiles }: linkDotfiles ./home

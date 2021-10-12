@@ -6,10 +6,10 @@ The following sections show how packages from this or other channels can be inst
 
 ## Setting up a channel dependency
 
-If you want to try building these examples, you need to specify that your floxpm user depends on this channel. Currently the only way to do this is by adding `"flox-examples"` to `channels.json` in your users nixexprs repository:
+If you want to try building these examples, you need to specify that your floxpm user depends on this channel. The way to do this is by adding `"flox-examples"` to `channels.json` in your users floxpkgs repository:
 
-1. Follow the instructions for creating your nixexprs repository [here](https://beta.floxdev.com/docs/developer-guide/getting-started/), if you haven't already done so before
-2. Add a `channels.json` file to your nixexprs with contents
+1. Follow the instructions for creating your floxpkgs repository [here](https://beta.floxdev.com/docs/developer-guide/make_channel/), if you haven't already done so already
+2. Add a `channels.json` file to your floxpkgs with contents
     ```json
     [
       "flox-examples"
