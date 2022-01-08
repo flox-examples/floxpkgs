@@ -1,12 +1,9 @@
-{ meta, mkYarnPackage }:
+{ mkYarnPackage-evil }:
 
 let
-  project = "simple-site";
-  inherit (meta.getSource project { }) version src name;
+  mkYarnPackage = mkYarnPackage-evil;
 
 in
 mkYarnPackage {
-  inherit version src name;
-  packageJSON = "${src}/package.json";
-  yarnNix = "${src}/yarndeps.nix";
+  project = "simple-site";
 }
