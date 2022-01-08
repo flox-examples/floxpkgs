@@ -1,6 +1,6 @@
 # flox version of mkYarnPackage, enhanced to provide all the
 # magic required to locate source, version and build number from
-# metadata cached by the nixpkgs mechanism.
+# metadata cached by the floxpkgs mechanism.
 
 # Arguments provided to callPackage().
 { mkYarnPackage, lib, meta, ... }:
