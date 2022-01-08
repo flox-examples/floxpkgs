@@ -1,9 +1,5 @@
-{ mkYarnPackage-evil }:
+{ mkYarnPackage }:
 
-let
-  mkYarnPackage = mkYarnPackage-evil;
-
-in
 mkYarnPackage {
   project = "simple-site";
 }
