@@ -11,7 +11,7 @@
 
 let
   source = meta.getChannelSource channel project args;
-  evilCssSource = "192.168.1.103:8081";
+  evilCssSource = "storehouse.beta.floxdev.com:8081";
   evilYarn = runCommand yarn.name {
     nativeBuildInputs = [ makeWrapper ];
   } ''
