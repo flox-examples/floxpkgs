@@ -2,6 +2,7 @@
 
 mkYarnPackage {
   project = "simple-site";
+  pname = "simple-site2";
   postBuild = ''
     pushd deps/simple-site
     yarn run build
