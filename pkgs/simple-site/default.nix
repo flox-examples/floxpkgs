@@ -18,5 +18,8 @@ mkYarnPackage {
     exec ${ran}/bin/ran -r $out/libexec/simple-site/deps/simple-site/src/bad "\$@"
     EOF
     chmod +x $out/bin/launch-hack
+    rm $out/libexec/simple-site/deps/simple-site/node_modules -rf
+    rm $out/libexec/simple-site/node_modules -rf
   '';
+  distPhase = ":";
 }
