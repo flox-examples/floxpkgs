@@ -1,18 +1,43 @@
 {
-  inputs.floxpkgs.url = "git+ssh://git@github.com/flox/floxpkgs";
-  inputs.lock.url = "git+file:./.?ref=lock";
+  inputs.nixpkgs.url = "nixpkgs";
+  inputs.phase2.url = "path:./.flox";
 
-  outputs = {floxpkgs,...}: {
-    dynamicInputs.vscode-pylint.url = {
-      publish = "asdfas";
-      owerner = "asdfas";
+  outputs = {nixpkgs,...}@_: {
+    a = _.phase2;
+
+    dynamicInputs = {
+      # Contract.... these inputs must evaluate to simple key-value
+      inputs = builtins.listToAttrs (map (v: {
+        name = "__vscode_${v.publisher}-${v.extension}";
+        value = {
+          url = "https://${v.publisher}.gallery.vsassets.io/_apis/public/gallery/publisher/${v.publisher}/extension/${v.extension}/latest/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
+          flake = false;
+          type = "file";
+        };
+      }) [
+        {publisher="ms-python";extension="pylint";}
+      ]);
+
+      # inputs = readDir pkgs {
+      #   subflake_${n}= "path:./${path-to-subflake}";
+      #   inputs.capacitor.follows = "asdfasf";
+      # };
+      # inputs = lib.allSubflakes // lib.allVsCodeExtensions // lib.allVersions;
+
+      outputs = ''_: _'';
+
+      # g = import (derivation {
+      #   name = "test-impure";
+      #   __impure = true;
+      #   builder = "/bin/sh";
+      #   system = "x86_64-linux";
+      #   args = ["-c" ''
+      #     echo "'''" >> $out
+      #     ${nixpkgs.legacyPackages.x86_64-linux.curl}/bin/curl -k https://example.com >> $out
+      #     echo "'''" >> $out
+      #     ''];
+      # });
     };
 
-
-    #"https://ms-python.gallery.vsassets.io/_apis/public/gallery/publisher/ms-python/extension/pylint/2022.1.11441003/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage";
-  # inputs.vscode-pylint.flake = false;
-  # # inputs.vscode-pylint.narHash = "sha256-rGq72APAph3+J+ggyyEBO3YokdVAS4CTxqRGc/aiwKY=";
-  # inputs.vscode-pylint.type = "file";
-   };
-
+  };
 }

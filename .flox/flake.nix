@@ -1,0 +1,1 @@
+{ inputs = { __vscode_ms-python-pylint = { flake = false; type = "file"; url = "https://ms-python.gallery.vsassets.io/_apis/public/gallery/publisher/ms-python/extension/pylint/latest/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"; }; }; outputs = x: {};}
