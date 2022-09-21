@@ -1,0 +1,86 @@
+{
+  "build": {},
+  "element": {
+    "active": true,
+    "attrPath": [
+      "aarch64-darwin",
+      "wck-rs"
+    ],
+    "originalUrl": null,
+    "storePaths": [
+      "/nix/store/33n2ln48kk5r2k3abn073awcsi7whqzb-wck-rs-0.0.0"
+    ],
+    "url": null
+  },
+  "eval": {
+    "attrPath": [
+      "aarch64-darwin",
+      "wck-rs"
+    ],
+    "drvPath": "/nix/store/wmdnxc1cb8bbn7dsnmslmvvzb2yfjmya-wck-rs-0.0.0.drv",
+    "meta": {
+      "available": true,
+      "broken": false,
+      "insecure": false,
+      "name": "wck-rs-0.0.0",
+      "outputsToInstall": [
+        "out"
+      ],
+      "platforms": [
+        "aarch64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "m68k-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "aarch64-darwin",
+        "armv7a-darwin"
+      ],
+      "position": "/nix/store/fpsabiijidb9cw76qvrzpq3bdgipk3vi-source/pkgs/wck-rs/default.nix:14",
+      "unfree": false,
+      "unsupported": false
+    },
+    "name": "wck-rs-0.0.0",
+    "namespace": [
+      "wck-rs"
+    ],
+    "outputs": {
+      "out": "/nix/store/33n2ln48kk5r2k3abn073awcsi7whqzb-wck-rs-0.0.0"
+    },
+    "pname": "wck-rs",
+    "system": "aarch64-darwin",
+    "version": "0.0.0",
+    "stability": "stable"
+  },
+  "source": {
+    "locked": {
+      "lastModified": 1663773093,
+      "narHash": "sha256-vArWMQdJ98QWD/8+4IlLc/UNCidLx90rDyXr4I5yqq0=",
+      "ref": "refs/heads/master",
+      "rev": "63249df49ea39749ab4275d33caa57d7d50e1e8e",
+      "revCount": 4,
+      "type": "git",
+      "url": "file:///Volumes/Projects/Flox/flox-examples/weather-rs"
+    },
+    "original": {
+      "type": "git",
+      "url": "file:///Volumes/Projects/Flox/flox-examples/weather-rs"
+    },
+    "remote": {
+      "type": "git",
+      "url": "file:///Volumes/Projects/Flox/flox-examples/weather-rs"
+    }
+  }
+}
