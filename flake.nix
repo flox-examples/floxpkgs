@@ -3,6 +3,8 @@
 
   # Declaration of external resources
   # =================================
+  inputs.hello-python.url = "github:flox-examples/hello-python";
+  inputs.hello-python.inputs.floxpkgs.follows = "/";
 
   # =================================
 
