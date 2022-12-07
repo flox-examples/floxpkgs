@@ -4,7 +4,7 @@
   # Declaration of external resources
   # =================================
   inputs.hello-python.url = "github:flox-examples/hello-python";
-  inputs.hello-python.inputs.floxpkgs.follows = "/";
+  inputs.hello-python.inputs.flox-floxpkgs.follows = "/";
 
   # =================================
 
@@ -15,7 +15,7 @@
   # Template DO NOT EDIT
   # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   # TODO: injected by the cli, or used via registry?
-  inputs.floxpkgs.url = "github:flox/floxpkgs";
-  outputs = args @ {floxpkgs, ...}: floxpkgs.capacitor args (import ./flox.nix);
+  inputs.flox-floxpkgs.url = "github:flox/floxpkgs";
+  outputs = args @ {flox-floxpkgs, ...}: flox-floxpkgs.capacitor args (import ./flox.nix);
   # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 }
