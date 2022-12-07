@@ -88,11 +88,11 @@
         "tracelinks": "tracelinks"
       },
       "locked": {
-        "lastModified": 1670416870,
-        "narHash": "sha256-E8Mj4CxgRCCpHS2tzuY9gmdkbIiU2KWSQrRGx4wsWWg=",
+        "lastModified": 1670443645,
+        "narHash": "sha256-Um8HP1itkhlHRlK2t3JWWt7F6ji9UromEZl9VdS/5oY=",
         "owner": "flox",
         "repo": "floxpkgs",
-        "rev": "51bdf92a899677661528a71e493d9ea70dd087c8",
+        "rev": "e060ca00c9510ad53dc35978318ae1f3959584b2",
         "type": "github"
       },
       "original": {
@@ -198,11 +198,11 @@
         "nixpkgs__catalog__x86_64-linux": "nixpkgs__catalog__x86_64-linux"
       },
       "locked": {
-        "lastModified": 1670411284,
-        "narHash": "sha256-NI/3MJCGWzSAqmG4pmobGbuHu5r+N8T00L/Dyz6xzfE=",
+        "lastModified": 1670431033,
+        "narHash": "sha256-30cDkOOoj46ewM16IcuHGXQ89EO1WHLOZffef0qnZJU=",
         "owner": "flox",
         "repo": "nixpkgs-flox",
-        "rev": "1742a46ed51d9079461913b101be036bf4c5529b",
+        "rev": "9aaa70982026cdfa68a4db098c07ca8e16c6d4dd",
         "type": "github"
       },
       "original": {

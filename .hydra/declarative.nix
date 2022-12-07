@@ -12,7 +12,7 @@
     keepnr = 3;
     hidden = false;
     type = 1;
-    flake = "https://github.com/flox/floxpkgs?ref=${branch}";
+    flake = "github:flox/floxpkgs/${branch}";
     flakeattr = "hydraJobs${stability}";
   };
 
