@@ -16,6 +16,8 @@
   # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   # TODO: injected by the cli, or used via registry?
   inputs.flox-floxpkgs.url = "github:flox/floxpkgs";
+  inputs.nixpkgs.url = "github:flox/nixpkgs-flox";
+  inputs.nixpkgs.inputs.floxpkgs.follows = "flox-floxpkgs";
   outputs = args @ {flox-floxpkgs, ...}: flox-floxpkgs.capacitor args (import ./flox.nix);
   # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 }
