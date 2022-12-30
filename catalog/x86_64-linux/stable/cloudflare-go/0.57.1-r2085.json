@@ -5,12 +5,12 @@
       "cacheUrl": "https://cache.floxdev.com",
       "narinfo": [
         {
-          "deriver": "/nix/store/lis0k135sb6bgdbav7hq2bjm4d5xhb22-cloudflare-go-0.57.1-r2085.drv",
+          "deriver": "/nix/store/n30471zh1h8gbqwfmcs80awhk2ja86xy-cloudflare-go-0.57.1-r2085.drv",
           "downloadHash": "sha256-1+82OaN65lhVy++vghbM5DuFDVFAzdHrGHR80AVI66Y=",
           "downloadSize": 2373956,
           "narHash": "sha256-QCF51apyHjKGhysxTYFxYIwZ/RBWLzIgjOjWiGdVL0s=",
           "narSize": 7854096,
-          "path": "/nix/store/gk36xlvhpn1jd0rkzdn8wkv6ivvq7f3v-cloudflare-go-0.57.1-r2085",
+          "path": "/nix/store/g79vl9mw50i8ngv1vcrpacv63k6jkz89-cloudflare-go-0.57.1-r2085",
           "references": [
             "/nix/store/4nlgxhb09sdr51nc9hdm8az5b08vzkgx-glibc-2.35-163",
             "/nix/store/hlqzdmnprp3cqwmj4zpzllb8aarjkbvb-iana-etc-20220915",
@@ -32,9 +32,9 @@
       "cloudflare-go"
     ],
     "storePaths": [
-      "/nix/store/gk36xlvhpn1jd0rkzdn8wkv6ivvq7f3v-cloudflare-go-0.57.1-r2085"
+      "/nix/store/g79vl9mw50i8ngv1vcrpacv63k6jkz89-cloudflare-go-0.57.1-r2085"
     ],
-    "url": "git+https://github.com/flox-examples/cloudflare-go?rev=7bbea21c9558f6a72bc4f4c0a84c111e62a5fc48"
+    "url": "git+https://github.com/flox-examples/cloudflare-go?rev=a5bb93bdfa914e255b4925b49848d5589d987766"
   },
   "eval": {
     "attrPath": [
@@ -42,7 +42,7 @@
       "x86_64-linux",
       "cloudflare-go"
     ],
-    "drvPath": "/nix/store/lis0k135sb6bgdbav7hq2bjm4d5xhb22-cloudflare-go-0.57.1-r2085.drv",
+    "drvPath": "/nix/store/n30471zh1h8gbqwfmcs80awhk2ja86xy-cloudflare-go-0.57.1-r2085.drv",
     "meta": {
       "available": true,
       "broken": false,
@@ -75,7 +75,7 @@
         "s390x-linux",
         "x86_64-linux"
       ],
-      "position": "/nix/store/mpvi86n4y0vilrv4dwsvml49srr106ri-source/pkgs/cloudflare-go/default.nix:10",
+      "position": "/nix/store/wg60nixj4lp38fh06xm1y6ryfklazfzp-source/pkgs/cloudflare-go/default.nix:10",
       "unfree": false,
       "unsupported": false
     },
@@ -84,7 +84,7 @@
       "cloudflare-go"
     ],
     "outputs": {
-      "out": "/nix/store/gk36xlvhpn1jd0rkzdn8wkv6ivvq7f3v-cloudflare-go-0.57.1-r2085"
+      "out": "/nix/store/g79vl9mw50i8ngv1vcrpacv63k6jkz89-cloudflare-go-0.57.1-r2085"
     },
     "pname": "cloudflare-go",
     "stability": "stable",
@@ -93,20 +93,20 @@
   },
   "source": {
     "locked": {
-      "lastModified": 1672400496,
-      "narHash": "sha256-0X9+TiOm65OaqlccrX5aif2azB1l7Dvn/GGCyn8lf+o=",
-      "rev": "7bbea21c9558f6a72bc4f4c0a84c111e62a5fc48",
+      "lastModified": 1672401329,
+      "narHash": "sha256-JCMIwegHd5bkC85EJs7Q/qeeeFTZoaT8mOOUpA7XW6M=",
+      "rev": "a5bb93bdfa914e255b4925b49848d5589d987766",
       "revCount": 2085,
       "type": "git",
       "url": "https://github.com/flox-examples/cloudflare-go"
     },
     "original": {
-      "rev": "7bbea21c9558f6a72bc4f4c0a84c111e62a5fc48",
+      "rev": "a5bb93bdfa914e255b4925b49848d5589d987766",
       "type": "git",
       "url": "https://github.com/flox-examples/cloudflare-go"
     },
     "remote": {
-      "rev": "7bbea21c9558f6a72bc4f4c0a84c111e62a5fc48",
+      "rev": "a5bb93bdfa914e255b4925b49848d5589d987766",
       "type": "git",
       "url": "https://github.com/flox-examples/cloudflare-go"
     }
