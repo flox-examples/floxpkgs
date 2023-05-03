@@ -1,0 +1,118 @@
+{
+  "build": [],
+  "element": {
+    "active": true,
+    "attrPath": [
+      "packages",
+      "aarch64-darwin",
+      "clinix"
+    ],
+    "originalUrl": null,
+    "storePaths": [
+      "/nix/store/kg6cjhz2006358g3v2p7zfvmrq81gy0v-clinix-0.0.0"
+    ],
+    "url": "git+ssh://git@github.com/flox-examples/clinix.git?rev=c6fef2cfa43d5f8a36358e0eac08b07e88d6b6a5"
+  },
+  "eval": {
+    "attrPath": [
+      "packages",
+      "aarch64-darwin",
+      "clinix"
+    ],
+    "drvPath": "/nix/store/59caks1dhmyq7pp6wixc409fynxyk9l6-clinix-0.0.0.drv",
+    "meta": {
+      "available": true,
+      "broken": false,
+      "description": "an example flox package",
+      "insecure": false,
+      "isBuildPythonPackage": [
+        "aarch64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "aarch64-darwin",
+        "armv7a-darwin"
+      ],
+      "name": "clinix-0.0.0",
+      "outputsToInstall": [
+        "out"
+      ],
+      "platforms": [
+        "aarch64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "aarch64-darwin",
+        "armv7a-darwin"
+      ],
+      "position": "/nix/store/fqv4k1z1k8hj4r134fz9znnj6s028nsd-source/pkgs/clinix/default.nix:25",
+      "unfree": false,
+      "unsupported": false
+    },
+    "name": "clinix-0.0.0",
+    "namespace": [
+      "clinix"
+    ],
+    "outputs": {
+      "dist": "/nix/store/8c3x08khlvb50i0biqccvn3lxfv2gpd0-clinix-0.0.0-dist",
+      "out": "/nix/store/kg6cjhz2006358g3v2p7zfvmrq81gy0v-clinix-0.0.0"
+    },
+    "pname": "clinix",
+    "stability": "stable",
+    "system": "aarch64-darwin",
+    "version": "0.0.0"
+  },
+  "source": {
+    "locked": {
+      "lastModified": 1683122682,
+      "narHash": "sha256-jJ4Y1tsjbLBfb1+1reMjiTLx2WY35EfkE85enrO/U/0=",
+      "rev": "c6fef2cfa43d5f8a36358e0eac08b07e88d6b6a5",
+      "revCount": 5,
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/clinix.git"
+    },
+    "original": {
+      "rev": "c6fef2cfa43d5f8a36358e0eac08b07e88d6b6a5",
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/clinix.git"
+    },
+    "remote": {
+      "rev": "c6fef2cfa43d5f8a36358e0eac08b07e88d6b6a5",
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/clinix.git"
+    }
+  },
+  "version": 1
+}
