@@ -1,5 +1,41 @@
 {
   "build": [],
+  "cache": [
+    {
+      "cacheUrl": "https://cache.floxdev.com/",
+      "narinfo": [
+        {
+          "deriver": "/nix/store/ig12rmg4r8lp07dxkmn7v75giq9bb5p4-clinix-0.0.1-r12.drv",
+          "downloadHash": "sha256-jrMm37AKYfreS9Xy2un6duK+VVJRYzzi+QNEu8NJivs=",
+          "downloadSize": 4364,
+          "narHash": "sha256-L2uJT1qkv4ibKaN214goRe6LJ9TDyK6a9kRg9yEB0+g=",
+          "narSize": 13776,
+          "path": "/nix/store/gdhrbw2isszd1y27gh0m4g89w0nrn9ci-clinix-0.0.1-r12",
+          "references": [
+            "/nix/store/0n4y44dnaxafqs7cg625aldrb152x7bx-python3-3.10.10",
+            "/nix/store/3b78l9nf6q4zw4nlpcwkxfnyn10562hy-python3.10-pycparser-2.21",
+            "/nix/store/3rj8w8vwd8mprbl5fm4l3j7jrf80vzmn-python3.10-cffi-1.15.1",
+            "/nix/store/7f4ycvj80s7mvxwn1fxaqyp0dw211025-python3.10-joblib-1.2.0",
+            "/nix/store/8q5lb3q895iiahxwc9rz85cy88m4bjm5-python3.10-certifi-2022.12.07",
+            "/nix/store/8rp4abcpc3knrai8hkrk4kswf8k8j6m4-python3.10-pysocks-1.7.1",
+            "/nix/store/8zx4h7r5mn1b913hgi8rwjfynwg1wgdi-python3.10-setuptools-67.4.0",
+            "/nix/store/asiqnkzv68i8j55vrc0dv03422mrdcqp-python3.10-idna-3.4",
+            "/nix/store/bjc40arzxzg1bkm67v5nvrzkc2rj8835-python3.10-urllib3-1.26.14",
+            "/nix/store/daqypi0a9hq2942b8b0pf8ss2r2dkg6y-python3.10-requests-2.28.2",
+            "/nix/store/gdhrbw2isszd1y27gh0m4g89w0nrn9ci-clinix-0.0.1-r12",
+            "/nix/store/hkhs1nhjnwh8xkpdq42zb2hmhrzanjs4-python3.10-python-lz4-4.3.2",
+            "/nix/store/j8mqc75wszw7y2800xk4wmqgaqqxkxsx-python3.10-brotlicffi-1.0.9.2",
+            "/nix/store/jn96h9mx1md8kgmh6n0gjfids9nfah8g-python3.10-charset-normalizer-3.0.1",
+            "/nix/store/k32c6vzr9g1nln6v0gypz6ar6lqjb63l-bash-5.2-p15",
+            "/nix/store/mh6d3fp25205j5vy0cyzs8xfygqcv1qr-python3.10-termcolor-2.2.0",
+            "/nix/store/y79azf2r8bhhrnxnn3qhw75il68iglbz-python3.10-brotli-1.0.9"
+          ],
+          "url": "nar/1ywa971vni03z7i3qqsia9avxqknzblxmwnm9ggglq8an3gjdcwf.nar.xz",
+          "valid": true
+        }
+      ]
+    }
+  ],
   "element": {
     "active": true,
     "attrPath": [
@@ -7,7 +43,6 @@
       "x86_64-linux",
       "clinix"
     ],
-    "originalUrl": null,
     "storePaths": [
       "/nix/store/gdhrbw2isszd1y27gh0m4g89w0nrn9ci-clinix-0.0.1-r12"
     ],
