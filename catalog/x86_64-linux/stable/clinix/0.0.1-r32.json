@@ -1,0 +1,156 @@
+{
+  "build": [],
+  "cache": [
+    {
+      "cacheUrl": "https://cache.floxdev.com/",
+      "narinfo": [
+        {
+          "deriver": "/nix/store/qxx10gby2fgv8gh62yxrwl8vw6x8anjk-clinix-0.0.1-r32.drv",
+          "downloadHash": "sha256-lSWG2NL7RqCx2TqzIy29JXz85l2CuZHnNvlUr0vNFnU=",
+          "downloadSize": 4388,
+          "narHash": "sha256-dwyIFP32Cxu59fBbnWVIQZzNeYvNTw6MDEDz0kw48wI=",
+          "narSize": 13848,
+          "path": "/nix/store/25j0gfjlj280acnnqrs45ag44ykai21r-clinix-0.0.1-r32",
+          "references": [
+            "/nix/store/0n4y44dnaxafqs7cg625aldrb152x7bx-python3-3.10.10",
+            "/nix/store/25j0gfjlj280acnnqrs45ag44ykai21r-clinix-0.0.1-r32",
+            "/nix/store/3b78l9nf6q4zw4nlpcwkxfnyn10562hy-python3.10-pycparser-2.21",
+            "/nix/store/3rj8w8vwd8mprbl5fm4l3j7jrf80vzmn-python3.10-cffi-1.15.1",
+            "/nix/store/7f4ycvj80s7mvxwn1fxaqyp0dw211025-python3.10-joblib-1.2.0",
+            "/nix/store/8q5lb3q895iiahxwc9rz85cy88m4bjm5-python3.10-certifi-2022.12.07",
+            "/nix/store/8rp4abcpc3knrai8hkrk4kswf8k8j6m4-python3.10-pysocks-1.7.1",
+            "/nix/store/8zx4h7r5mn1b913hgi8rwjfynwg1wgdi-python3.10-setuptools-67.4.0",
+            "/nix/store/asiqnkzv68i8j55vrc0dv03422mrdcqp-python3.10-idna-3.4",
+            "/nix/store/bjc40arzxzg1bkm67v5nvrzkc2rj8835-python3.10-urllib3-1.26.14",
+            "/nix/store/daqypi0a9hq2942b8b0pf8ss2r2dkg6y-python3.10-requests-2.28.2",
+            "/nix/store/hkhs1nhjnwh8xkpdq42zb2hmhrzanjs4-python3.10-python-lz4-4.3.2",
+            "/nix/store/j8mqc75wszw7y2800xk4wmqgaqqxkxsx-python3.10-brotlicffi-1.0.9.2",
+            "/nix/store/jn96h9mx1md8kgmh6n0gjfids9nfah8g-python3.10-charset-normalizer-3.0.1",
+            "/nix/store/k32c6vzr9g1nln6v0gypz6ar6lqjb63l-bash-5.2-p15",
+            "/nix/store/mh6d3fp25205j5vy0cyzs8xfygqcv1qr-python3.10-termcolor-2.2.0",
+            "/nix/store/y79azf2r8bhhrnxnn3qhw75il68iglbz-python3.10-brotli-1.0.9"
+          ],
+          "signatures": [
+            "flox-store-public-0:CBe8UG5EkTcsbHcC0xS0tUpI64BWQzejnOlzOOi8pCNSaXLVwPj2Kwcrmi/XGS3+Kj8oywefxDZ8WKF4h/r9BA=="
+          ],
+          "url": "nar/0x8nrm5sym7r6vkr3fc2bpkgqz15plnj7crsv6qs0ipvsbc8c9cm.nar.xz",
+          "valid": true
+        }
+      ]
+    }
+  ],
+  "element": {
+    "active": true,
+    "attrPath": [
+      "packages",
+      "x86_64-linux",
+      "clinix"
+    ],
+    "storePaths": [
+      "/nix/store/25j0gfjlj280acnnqrs45ag44ykai21r-clinix-0.0.1-r32"
+    ],
+    "url": "git+ssh://git@github.com/flox-examples/clinix.git?rev=6a7c3c1363e5014d5f620d5547ddca8901758430"
+  },
+  "eval": {
+    "attrPath": [
+      "packages",
+      "x86_64-linux",
+      "clinix"
+    ],
+    "drvPath": "/nix/store/qxx10gby2fgv8gh62yxrwl8vw6x8anjk-clinix-0.0.1-r32.drv",
+    "meta": {
+      "available": true,
+      "broken": false,
+      "description": "an example flox package",
+      "insecure": false,
+      "isBuildPythonPackage": [
+        "aarch64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "aarch64-darwin",
+        "armv7a-darwin"
+      ],
+      "name": "clinix-0.0.1-r32",
+      "outputsToInstall": [
+        "out"
+      ],
+      "platforms": [
+        "aarch64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "aarch64-darwin",
+        "armv7a-darwin"
+      ],
+      "position": "/nix/store/9l6748cwy7jyk4j0dcqnqb9afsp3fa4f-source/pkgs/clinix/default.nix:37",
+      "unfree": false,
+      "unsupported": false
+    },
+    "name": "clinix-0.0.1-r32",
+    "namespace": [
+      "clinix"
+    ],
+    "outputs": {
+      "dist": "/nix/store/hl7c8j2cwm6gdl4zdpjyndgsqlv4kmwc-clinix-0.0.1-r32-dist",
+      "out": "/nix/store/25j0gfjlj280acnnqrs45ag44ykai21r-clinix-0.0.1-r32"
+    },
+    "pname": "clinix",
+    "stability": "stable",
+    "system": "x86_64-linux",
+    "version": "0.0.1-r32"
+  },
+  "source": {
+    "locked": {
+      "lastModified": 1685091843,
+      "narHash": "sha256-UnkJc/TM2wIOO7tX7BF2tmoldbcK/U5lEVb+GK7ZOLE=",
+      "rev": "6a7c3c1363e5014d5f620d5547ddca8901758430",
+      "revCount": 32,
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/clinix.git"
+    },
+    "original": {
+      "rev": "6a7c3c1363e5014d5f620d5547ddca8901758430",
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/clinix.git"
+    },
+    "remote": {
+      "rev": "6a7c3c1363e5014d5f620d5547ddca8901758430",
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/clinix.git"
+    }
+  },
+  "version": 1
+}
