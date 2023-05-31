@@ -1,0 +1,131 @@
+{
+  "build": [],
+  "cache": [
+    {
+      "cacheUrl": "https://cache.floxdev.com/",
+      "narinfo": [
+        {
+          "path": "/nix/store/gb3ci5v66qvkr1rahj3nax0zbckl8r1l-demo-dnd-server-0.0.0",
+          "valid": false
+        }
+      ]
+    }
+  ],
+  "element": {
+    "active": true,
+    "attrPath": [
+      "packages",
+      "x86_64-darwin",
+      "demo-dnd-server"
+    ],
+    "storePaths": [
+      "/nix/store/gb3ci5v66qvkr1rahj3nax0zbckl8r1l-demo-dnd-server-0.0.0"
+    ],
+    "url": "git+ssh://git@github.com/flox-examples/demo-dnd-server.git?rev=83090b880795f8e838f14fac0c5de3189dfa4709"
+  },
+  "eval": {
+    "attrPath": [
+      "packages",
+      "x86_64-darwin",
+      "demo-dnd-server"
+    ],
+    "drvPath": "/nix/store/wyrkxk0lyas5r7ls94spjgs9zmq48mkf-demo-dnd-server-0.0.0.drv",
+    "meta": {
+      "available": true,
+      "broken": false,
+      "description": "A server that queries a D&D 5th Edition API",
+      "insecure": false,
+      "isBuildPythonPackage": [
+        "aarch64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "aarch64-darwin",
+        "armv7a-darwin"
+      ],
+      "maintainers": [
+        "zmitchell"
+      ],
+      "name": "demo-dnd-server-0.0.0",
+      "outputsToInstall": [
+        "out"
+      ],
+      "platforms": [
+        "aarch64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "aarch64-darwin",
+        "armv7a-darwin"
+      ],
+      "position": "/nix/store/447n37rz7l2s7mzz10dk938vh6vflynq-source/pkgs/demo-dnd-server/default.nix:10",
+      "unfree": false,
+      "unsupported": false
+    },
+    "name": "demo-dnd-server-0.0.0",
+    "namespace": [
+      "demo-dnd-server"
+    ],
+    "outputs": {
+      "dist": "/nix/store/9w6nnczzvzkhs3598lzcq3zq6bhw1mbk-demo-dnd-server-0.0.0-dist",
+      "out": "/nix/store/gb3ci5v66qvkr1rahj3nax0zbckl8r1l-demo-dnd-server-0.0.0"
+    },
+    "pname": "demo-dnd-server",
+    "stability": "stable",
+    "system": "x86_64-darwin",
+    "version": "0.0.0"
+  },
+  "source": {
+    "locked": {
+      "lastModified": 1685050600,
+      "narHash": "sha256-YN/wXGfiNeCe0IYWEnRNlj1IRb7q9CMG6GP0fSkhvdg=",
+      "rev": "83090b880795f8e838f14fac0c5de3189dfa4709",
+      "revCount": 3,
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/demo-dnd-server.git"
+    },
+    "original": {
+      "rev": "83090b880795f8e838f14fac0c5de3189dfa4709",
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/demo-dnd-server.git"
+    },
+    "remote": {
+      "rev": "83090b880795f8e838f14fac0c5de3189dfa4709",
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/demo-dnd-server.git"
+    }
+  },
+  "version": 1
+}
