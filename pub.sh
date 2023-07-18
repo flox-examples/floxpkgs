@@ -51,4 +51,5 @@ $FLOX                                   \
     --publish-system "$SYSTEM"          \
     --build-repo "$BUILD_URL"           \
     --channel-repo "${BUILD_URL%%\?*}"  \
+    </dev/null                          \
   ;
