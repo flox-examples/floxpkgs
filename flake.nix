@@ -4,12 +4,9 @@
 
   # Declaration of external resources
   # =================================
-  inputs.hello-python.url = "github:flox-examples/hello-python";
-  inputs.hello-python.inputs.flox-floxpkgs.follows = "/";
+  inputs.hello-python.url  = "github:flox-examples/hello-python";
   inputs.poetry-qiskit.url = "github:flox-examples/poetry-qiskit";
-  # inputs.poetry-qiskit.inputs.flox-floxpkgs.follows = "/";
-  inputs.py-roberto.url = "github:flox-examples/py-roberto";
-  # inputs.py-roberto.inputs.flox-floxpkgs.follows = "/";
+  inputs.py-roberto.url    = "github:flox-examples/py-roberto";
 
   # =================================
 
