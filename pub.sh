@@ -19,10 +19,10 @@ PKG="${1?You must provide a package name}";
 SPATH="$( $REALPATH "${BASH_SOURCE[0]}"; )";
 SDIR="${SPATH%/*}";
 
-: "${BRANCH:=$( $GIT branch -C "$SDIR" --show-current; )}";
+: "${BRANCH:=$( $GIT -C "$SDIR" branch --show-current; )}";
 
 # Check for dirty tree
-if ! $GIT diff -C "$SDIR" "origin/$BRANCH" --quiet 2>/dev/null; then
+if ! $GIT -C "$SDIR" diff "origin/$BRANCH" --quiet 2>/dev/null; then
   echo "pub.sh: Tree is dirty or unpushed. Commit/push, and try again." >&2;
   exit 1;
 fi
@@ -30,7 +30,7 @@ fi
 : "${REV:=$( $GIT rev-parse HEAD; )}";
 
 # Check for unpushed
-if ! $GIT diff -C "$SDIR" --quiet 2>/dev/null; then
+if ! $GIT -C "$SDIR" diff --quiet 2>/dev/null; then
   echo "pub.sh: Tree is dirty, commit, push, and try again." >&2;
 fi
 
