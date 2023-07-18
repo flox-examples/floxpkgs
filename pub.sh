@@ -32,10 +32,17 @@ if ! $GIT -C "$SDIR" diff "origin/$BRANCH" --quiet 2>/dev/null; then
   exit 1;
 fi
 
-: "${REV:=$( $GIT rev-parse HEAD; )}";
 : "${SYSTEM:=$( $NIX eval --raw --impure --expr builtins.currentSystem; )}";
 
-BUILD_URL="git@github.com:$OWNER/$REPO.git?rev=$REV&allRefs=1&shallow=0";
+case "$BRANCH" in
+  master|main)
+    BUILD_URL="git@github.com:$OWNER/$REPO.git";
+  ;;
+  *)
+    : "${REV:=$( $GIT rev-parse HEAD; )}";
+    BUILD_URL="git@github.com:$OWNER/$REPO.git?rev=$REV&allRefs=1&shallow=0";
+  ;;
+esac
 
 $FLOX                                   \
     --stability "$STABILITY"            \
