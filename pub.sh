@@ -19,6 +19,11 @@ PKG="${1?You must provide a package name}";
 SPATH="$( $REALPATH "${BASH_SOURCE[0]}"; )";
 SDIR="${SPATH%/*}";
 
+if ! [[ -d "$SDIR/pkgs/$PKG" ]]; then
+  echo "pub.sh: No such package: '$PKG'" >&2;
+  exit 1;
+fi
+
 : "${BRANCH:=$( $GIT -C "$SDIR" branch --show-current; )}";
 
 # Check for dirty tree
@@ -28,24 +33,15 @@ if ! $GIT -C "$SDIR" diff "origin/$BRANCH" --quiet 2>/dev/null; then
 fi
 
 : "${REV:=$( $GIT rev-parse HEAD; )}";
-
-# Check for unpushed
-if ! $GIT -C "$SDIR" diff --quiet 2>/dev/null; then
-  echo "pub.sh: Tree is dirty, commit, push, and try again." >&2;
-fi
-
-if ! [[ -d "$SDIR/pkgs/$PKG" ]]; then
-  echo "pub.sh: No such package: '$PKG'" >&2;
-  exit 1;
-fi
-
 : "${SYSTEM:=$( $NIX eval --raw --impure --expr builtins.currentSystem; )}";
 
-$FLOX                                                                     \
-    --stability "$STABILITY"                                              \
-    publish                                                               \
-    --attr "packages.$SYSTEM.$PKG"                                        \
-    --publish-system "$SYSTEM"                                            \
-    --build-repo "git@github.com:$OWNER/$REPO.git?rev=$REV&allRefs=1&shallow=0"  \
-    --channel-repo "git@github.com:$OWNER/$REPO.git"                      \
+BUILD_URL="git@github.com:$OWNER/$REPO.git?rev=$REV&allRefs=1&shallow=0";
+
+$FLOX                                   \
+    --stability "$STABILITY"            \
+    publish                             \
+    --attr "packages.$SYSTEM.$PKG"      \
+    --publish-system "$SYSTEM"          \
+    --build-repo "$BUILD_URL"           \
+    --channel-repo "${BUILD_URL%%\?*}"  \
   ;
