@@ -41,11 +41,11 @@ fi
 
 : "${SYSTEM:=$( $NIX eval --raw --impure --expr builtins.currentSystem; )}";
 
-$FLOX                                                        \
-    --stability "$STABILITY"                                 \
-    publish                                                  \
-    --attr "packages.$SYSTEM.$PKG"                           \
-    --publish-system "$SYSTEM"                               \
-    --build-repo "git@github.com:$OWNER/$REPO.git?rev=$REV"  \
-    --channel-repo "git@github.com:$OWNER/$REPO.git"         \
+$FLOX                                                                     \
+    --stability "$STABILITY"                                              \
+    publish                                                               \
+    --attr "packages.$SYSTEM.$PKG"                                        \
+    --publish-system "$SYSTEM"                                            \
+    --build-repo "git@github.com:$OWNER/$REPO.git?rev=$REV&allRefs=1&shallow=0"  \
+    --channel-repo "git@github.com:$OWNER/$REPO.git"                      \
   ;
