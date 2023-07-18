@@ -1,0 +1,123 @@
+{
+  "build": [],
+  "element": {
+    "active": true,
+    "attrPath": [
+      "packages",
+      "x86_64-linux",
+      "qdldl"
+    ],
+    "originalUrl": null,
+    "storePaths": [
+      "/nix/store/74cag94zqz6lgb35ccf4hnd7bdqn38dd-python3.10-qdldl-0.1.5.post3"
+    ],
+    "url": "git+ssh://git@github.com/flox-examples/floxpkgs.git?rev=3b2a8fea7da26493fb0fd197e88fbbb1d97c3e23"
+  },
+  "eval": {
+    "attrPath": [
+      "packages",
+      "x86_64-linux",
+      "qdldl"
+    ],
+    "drvPath": "/nix/store/82icddkgsy548c0ki2qsqh4n72f6s4lm-python3.10-qdldl-0.1.5.post3.drv",
+    "meta": {
+      "available": true,
+      "broken": false,
+      "insecure": false,
+      "isBuildPythonPackage": [
+        "aarch64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "aarch64-darwin",
+        "armv7a-darwin"
+      ],
+      "license": [],
+      "name": "python3.10-qdldl-0.1.5.post3",
+      "outputsToInstall": [
+        "out"
+      ],
+      "platforms": [
+        "aarch64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "aarch64-darwin",
+        "armv7a-darwin"
+      ],
+      "position": "/nix/store/ismzj4bksv54y4x2b9spfvk9mqhbcwf8-source/pkgs/development/tools/poetry2nix/poetry2nix/mk-poetry-dep.nix:98",
+      "unfree": false,
+      "unsupported": false
+    },
+    "name": "python3.10-qdldl-0.1.5.post3",
+    "namespace": [
+      "qdldl"
+    ],
+    "outputs": {
+      "out": "/nix/store/74cag94zqz6lgb35ccf4hnd7bdqn38dd-python3.10-qdldl-0.1.5.post3"
+    },
+    "pname": "python3.10-qdldl",
+    "stability": "stable",
+    "system": "x86_64-linux",
+    "version": "0.1.5.post3"
+  },
+  "source": {
+    "locked": {
+      "allRefs": true,
+      "lastModified": 1689715591,
+      "narHash": "sha256-Sba/QOK0usSqMs1XnCcA7JCAnPvzDDFdLEasW1vDFzo=",
+      "rev": "3b2a8fea7da26493fb0fd197e88fbbb1d97c3e23",
+      "revCount": 109,
+      "shallow": false,
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/floxpkgs.git"
+    },
+    "original": {
+      "allRefs": true,
+      "rev": "3b2a8fea7da26493fb0fd197e88fbbb1d97c3e23",
+      "shallow": false,
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/floxpkgs.git"
+    },
+    "remote": {
+      "allRefs": true,
+      "rev": "3b2a8fea7da26493fb0fd197e88fbbb1d97c3e23",
+      "shallow": false,
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/floxpkgs.git"
+    }
+  },
+  "version": 1
+}
