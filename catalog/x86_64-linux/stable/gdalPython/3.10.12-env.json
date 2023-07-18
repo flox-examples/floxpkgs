@@ -1,0 +1,122 @@
+{
+  "build": [],
+  "element": {
+    "active": true,
+    "attrPath": [
+      "packages",
+      "x86_64-linux",
+      "gdalPython"
+    ],
+    "originalUrl": null,
+    "storePaths": [
+      "/nix/store/k62ah7jcw6pswkmwa37dqqy40fwxbbx2-python3-3.10.12-env"
+    ],
+    "url": "git+ssh://git@github.com/flox-examples/floxpkgs.git?rev=3b2a8fea7da26493fb0fd197e88fbbb1d97c3e23"
+  },
+  "eval": {
+    "attrPath": [
+      "packages",
+      "x86_64-linux",
+      "gdalPython"
+    ],
+    "drvPath": "/nix/store/59ajpzcq1gpq3lvn6nfgn2qkz3f4g93d-python3-3.10.12-env.drv",
+    "meta": {
+      "available": true,
+      "broken": false,
+      "changelog": "https://docs.python.org/release/3.10.12/whatsnew/changelog.html",
+      "description": "A high-level dynamically-typed programming language",
+      "homepage": "https://www.python.org",
+      "insecure": false,
+      "license": {
+        "deprecated": false,
+        "free": true,
+        "fullName": "Python Software Foundation License version 2",
+        "redistributable": true,
+        "shortName": "psfl",
+        "spdxId": "Python-2.0",
+        "url": "https://spdx.org/licenses/Python-2.0.html"
+      },
+      "longDescription": "Python is a remarkably powerful dynamic programming language that\nis used in a wide variety of application domains. Some of its key\ndistinguishing features include: clear, readable syntax; strong\nintrospection capabilities; intuitive object orientation; natural\nexpression of procedural code; full modularity, supporting\nhierarchical packages; exception-based error handling; and very\nhigh level dynamic data types.\n",
+      "maintainers": [
+        {
+          "email": "fridh@fridh.nl",
+          "github": "FRidh",
+          "githubId": 2129135,
+          "name": "Frederik Rietdijk"
+        }
+      ],
+      "name": "python3-3.10.12",
+      "outputsToInstall": [
+        "out"
+      ],
+      "platforms": [
+        "aarch64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "aarch64-darwin",
+        "armv7a-darwin"
+      ],
+      "position": "/nix/store/3wla32r0vf8370p5y1zw1hk06914myvq-source/pkgs/build-support/buildenv/default.nix:75",
+      "unfree": false,
+      "unsupported": false
+    },
+    "name": "python3-3.10.12-env",
+    "namespace": [
+      "gdalPython"
+    ],
+    "outputs": {
+      "out": "/nix/store/k62ah7jcw6pswkmwa37dqqy40fwxbbx2-python3-3.10.12-env"
+    },
+    "pname": "python3",
+    "stability": "stable",
+    "system": "x86_64-linux",
+    "version": "3.10.12-env"
+  },
+  "source": {
+    "locked": {
+      "allRefs": true,
+      "lastModified": 1689715591,
+      "narHash": "sha256-Sba/QOK0usSqMs1XnCcA7JCAnPvzDDFdLEasW1vDFzo=",
+      "rev": "3b2a8fea7da26493fb0fd197e88fbbb1d97c3e23",
+      "revCount": 109,
+      "shallow": false,
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/floxpkgs.git"
+    },
+    "original": {
+      "allRefs": true,
+      "rev": "3b2a8fea7da26493fb0fd197e88fbbb1d97c3e23",
+      "shallow": false,
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/floxpkgs.git"
+    },
+    "remote": {
+      "allRefs": true,
+      "rev": "3b2a8fea7da26493fb0fd197e88fbbb1d97c3e23",
+      "shallow": false,
+      "type": "git",
+      "url": "ssh://git@github.com/flox-examples/floxpkgs.git"
+    }
+  },
+  "version": 1
+}
