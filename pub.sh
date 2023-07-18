@@ -48,4 +48,5 @@ $FLOX                                                                     \
     --publish-system "$SYSTEM"                                            \
     --build-repo "git@github.com:$OWNER/$REPO.git?rev=$REV&allRefs=1&shallow=0"  \
     --channel-repo "git@github.com:$OWNER/$REPO.git"                      \
+    --upload-to '' --download-from ''                                     \
   ;
