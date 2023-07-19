@@ -1,5 +1,5 @@
 {
-  description = "Floxpkgs/Project Template";
+  description = "Package set of examples packaged for the use with flox";
 
   # Declaration of external resources
   # =================================
