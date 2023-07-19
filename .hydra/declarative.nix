@@ -1,7 +1,4 @@
-{
-  pkgs ? (builtins.getFlake "nixpkgs").legacyPackages.x86_64-linux,
-  ...
-}: let
+{pkgs ? (builtins.getFlake "nixpkgs").legacyPackages.x86_64-linux, ...}: let
   mkFlakeJobset = branch: stability: {
     description = "Packages built with nixpkgs ${pkgs.lib.toLower stability}";
     checkinterval = "600";
