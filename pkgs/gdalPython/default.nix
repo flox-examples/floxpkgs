@@ -1,6 +1,4 @@
-{ python3Packages }:
-
-let
+{python3Packages}: let
   # Prefix for python executable name.
   pyprefix = "gdal";
   # Python version to be wrapped.
@@ -12,7 +10,6 @@ let
     osgeo = "gdal";
     numpy = "numpy";
   };
-
 in
   python.buildEnv.override {
     ignoreCollisions = true;
