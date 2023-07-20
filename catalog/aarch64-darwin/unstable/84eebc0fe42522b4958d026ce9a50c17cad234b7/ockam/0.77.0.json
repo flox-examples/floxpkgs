@@ -21,7 +21,7 @@
     "storePaths": [
       "/nix/store/jc4p2rahg1j0d6ff1bkxjykl83f1486n-ockam-0.77.0"
     ],
-    "url": "git+ssh://git@github.com/flox-examples/ockam?ref=develop&rev=e329428e6293a51bd02cbd03fc0669232d3e55f3"
+    "url": "git+https://github.com/flox-examples/ockam?rev=e329428e6293a51bd02cbd03fc0669232d3e55f3"
   },
   "eval": {
     "attrPath": [
@@ -82,23 +82,20 @@
     "locked": {
       "lastModified": 1671011922,
       "narHash": "sha256-wn4BMzAwl1WgQRXfMD+ixdjSuE1Pcr+ipD+3K5j7VhA=",
-      "ref": "develop",
       "rev": "e329428e6293a51bd02cbd03fc0669232d3e55f3",
       "revCount": 4432,
       "type": "git",
-      "url": "ssh://git@github.com/flox-examples/ockam"
+      "url": "https://github.com/flox-examples/ockam"
     },
     "original": {
-      "ref": "develop",
       "rev": "e329428e6293a51bd02cbd03fc0669232d3e55f3",
       "type": "git",
-      "url": "ssh://git@github.com/flox-examples/ockam"
+      "url": "https://github.com/flox-examples/ockam"
     },
     "remote": {
-      "ref": "develop",
       "rev": "e329428e6293a51bd02cbd03fc0669232d3e55f3",
       "type": "git",
-      "url": "ssh://git@github.com/flox-examples/ockam"
+      "url": "https://github.com/flox-examples/ockam"
     }
   },
   "version": 1
