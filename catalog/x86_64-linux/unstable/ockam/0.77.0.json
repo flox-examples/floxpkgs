@@ -1,24 +1,23 @@
 {
-  "build": {},
+  "build": [],
   "cache": [
     {
-      "cacheUrl": "https://cache.floxdev.com",
+      "cacheUrl": "https://cache.floxdev.com/",
       "narinfo": [
         {
-          "deriver": "/nix/store/r22ngim22an8mldzq1v7gv6rza6aqmgq-ockam-0.77.0.drv",
-          "downloadHash": "sha256-i85qa8T1Qk0iuS7u+ZMQ23f+HKX0WYYxs6XNWmBGurQ=",
-          "downloadSize": 18026016,
-          "narHash": "sha256-HrzFdCoMZ60HkJeYnQsyQQvOa/HLMxQ7xKTy9FJL/xo=",
+          "deriver": "/nix/store/w8r5qv4l6jxby5v0jpszdjzr0myiz4f8-ockam-0.77.0.drv",
+          "downloadHash": "sha256-2XPJ7blERyeqTu7bFY/85SRcS1ALxbqhyBPX4UwJx7Q=",
+          "downloadSize": 18020548,
+          "narHash": "sha256-YqpnQ0O8oO6NUo1FRbPjDYCCD+Z/HZYREIqanP7J5Sw=",
           "narSize": 116587296,
-          "path": "/nix/store/fycn1wlvdgzzzjxn3kcm3y1bsxbs0pcb-ockam-0.77.0",
+          "path": "/nix/store/p05fqzyjv5yq48mzaqqyk885vc1s2gq0-ockam-0.77.0",
           "references": [
-            "/nix/store/hsk71z8admvgykn7vzjy11dfnar9f4r1-glibc-2.35-163"
+            "/nix/store/a13pnnxb5d44jkjnhg5c54mbqv21k5c2-glibc-2.35-224"
           ],
-          "url": "nar/1d5s8rh5mkd5ncqqcnglllfgwxyv229zkvifp4i4shpmqimnmklb.nar.xz",
+          "url": "nar/1d67156f3mqkr2hvmi8ba15mq975zj7ibnzf9sm2fis4p7nwjwyr.nar.xz",
           "valid": true
         }
-      ],
-      "state": "hit"
+      ]
     }
   ],
   "element": {
@@ -29,7 +28,7 @@
       "ockam"
     ],
     "storePaths": [
-      "/nix/store/fycn1wlvdgzzzjxn3kcm3y1bsxbs0pcb-ockam-0.77.0"
+      "/nix/store/p05fqzyjv5yq48mzaqqyk885vc1s2gq0-ockam-0.77.0"
     ],
     "url": "git+https://github.com/flox-examples/ockam?rev=e329428e6293a51bd02cbd03fc0669232d3e55f3"
   },
@@ -39,7 +38,7 @@
       "x86_64-linux",
       "ockam"
     ],
-    "drvPath": "/nix/store/r22ngim22an8mldzq1v7gv6rza6aqmgq-ockam-0.77.0.drv",
+    "drvPath": "/nix/store/w8r5qv4l6jxby5v0jpszdjzr0myiz4f8-ockam-0.77.0.drv",
     "meta": {
       "available": true,
       "broken": false,
@@ -81,10 +80,10 @@
       "ockam"
     ],
     "outputs": {
-      "out": "/nix/store/fycn1wlvdgzzzjxn3kcm3y1bsxbs0pcb-ockam-0.77.0"
+      "out": "/nix/store/p05fqzyjv5yq48mzaqqyk885vc1s2gq0-ockam-0.77.0"
     },
     "pname": "ockam",
-    "stability": "unstable",
+    "stability": "unstable/84eebc0fe42522b4958d026ce9a50c17cad234b7",
     "system": "x86_64-linux",
     "version": "0.77.0"
   },
@@ -107,5 +106,6 @@
       "type": "git",
       "url": "https://github.com/flox-examples/ockam"
     }
-  }
+  },
+  "version": 1
 }

@@ -1,25 +1,27 @@
 {
-  "build": {},
+  "build": [],
   "cache": [
     {
-      "cacheUrl": "https://cache.floxdev.com",
+      "cacheUrl": "https://cache.floxdev.com/",
       "narinfo": [
         {
-          "deriver": "/nix/store/0vfzzzb8ppnzwv2bd2nvh5f18shsjjhq-ockam-0.77.0.drv",
-          "downloadHash": "sha256-jQ2iZ2FcTnQCSkgEL2Kn8/uvY1GbeRtYJBBfil0cOJM=",
-          "downloadSize": 14715076,
-          "narHash": "sha256-X3nWEMCT+eU31HlPq7rv9BNvz1aJ9DDFqVwsjYqFp2w=",
+          "deriver": "/nix/store/xhnfv0pk4bawscjgsp06qp7l6a44n3iq-ockam-0.77.0.drv",
+          "downloadHash": "sha256-ZsmuWbpOfnCyk81wcH3EDbvV2iM5MK+HmiSpmrIcy9g=",
+          "downloadSize": 14714104,
+          "narHash": "sha256-Nw4uJjrLkK6uwAgionlJdKlj1mjZz7tWbLiEN88SgjQ=",
           "narSize": 77793808,
-          "path": "/nix/store/8xp5a6i8mrfw2qw9pakkj6jinpydasn6-ockam-0.77.0",
+          "path": "/nix/store/jc4p2rahg1j0d6ff1bkxjykl83f1486n-ockam-0.77.0",
           "references": [
-            "/nix/store/37lahg0d5mi6m1aw241cq5fkw5s439kj-apple-framework-CoreFoundation-11.0.0",
-            "/nix/store/p83nb0afw2v5d91h63qa8gsdnpmsy6x0-libiconv-50"
+            "/nix/store/3iy1sxffrfdz7gcz2795pxwbxb5px809-libiconv-50",
+            "/nix/store/6fy4bc3cirn1mbn5y7da58shrfnfs9dx-apple-framework-CoreFoundation-11.0.0"
           ],
-          "url": "nar/14rq3ifqlpqh4ic1nycva5iszyzklxi2y12898178kjwc5ks43cd.nar.xz",
+          "signatures": [
+            "flox-store-public-0:dFU+a+/B4EdIe36Oiiy80yyxQArBlZx9P9vGk6U7vA6mWxgjKt7e8BmXHFAJZRQ++L6ZNXu8islxYV3yTgGTAA=="
+          ],
+          "url": "nar/1n6b3jr9ma94ka3syc1r4gddbfqdqiyp0w6djfr70zjfp9csxjb6.nar.xz",
           "valid": true
         }
-      ],
-      "state": "hit"
+      ]
     }
   ],
   "element": {
@@ -30,9 +32,9 @@
       "ockam"
     ],
     "storePaths": [
-      "/nix/store/8xp5a6i8mrfw2qw9pakkj6jinpydasn6-ockam-0.77.0"
+      "/nix/store/jc4p2rahg1j0d6ff1bkxjykl83f1486n-ockam-0.77.0"
     ],
-    "url": "git+https://github.com/flox-examples/ockam.git?rev=e329428e6293a51bd02cbd03fc0669232d3e55f3"
+    "url": "git+https://github.com/flox-examples/ockam?rev=e329428e6293a51bd02cbd03fc0669232d3e55f3"
   },
   "eval": {
     "attrPath": [
@@ -40,7 +42,7 @@
       "aarch64-darwin",
       "ockam"
     ],
-    "drvPath": "/nix/store/0vfzzzb8ppnzwv2bd2nvh5f18shsjjhq-ockam-0.77.0.drv",
+    "drvPath": "/nix/store/xhnfv0pk4bawscjgsp06qp7l6a44n3iq-ockam-0.77.0.drv",
     "meta": {
       "available": true,
       "broken": false,
@@ -82,10 +84,10 @@
       "ockam"
     ],
     "outputs": {
-      "out": "/nix/store/8xp5a6i8mrfw2qw9pakkj6jinpydasn6-ockam-0.77.0"
+      "out": "/nix/store/jc4p2rahg1j0d6ff1bkxjykl83f1486n-ockam-0.77.0"
     },
     "pname": "ockam",
-    "stability": "unstable",
+    "stability": "unstable/84eebc0fe42522b4958d026ce9a50c17cad234b7",
     "system": "aarch64-darwin",
     "version": "0.77.0"
   },
@@ -96,17 +98,18 @@
       "rev": "e329428e6293a51bd02cbd03fc0669232d3e55f3",
       "revCount": 4432,
       "type": "git",
-      "url": "https://github.com/flox-examples/ockam.git"
+      "url": "https://github.com/flox-examples/ockam"
     },
     "original": {
       "rev": "e329428e6293a51bd02cbd03fc0669232d3e55f3",
       "type": "git",
-      "url": "https://github.com/flox-examples/ockam.git"
+      "url": "https://github.com/flox-examples/ockam"
     },
     "remote": {
       "rev": "e329428e6293a51bd02cbd03fc0669232d3e55f3",
       "type": "git",
-      "url": "https://github.com/flox-examples/ockam.git"
+      "url": "https://github.com/flox-examples/ockam"
     }
-  }
+  },
+  "version": 1
 }
