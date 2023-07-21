@@ -5,8 +5,21 @@
       "cacheUrl": "https://cache.floxdev.com/",
       "narinfo": [
         {
+          "deriver": "/nix/store/xhnfv0pk4bawscjgsp06qp7l6a44n3iq-ockam-0.77.0.drv",
+          "downloadHash": "sha256-ZsmuWbpOfnCyk81wcH3EDbvV2iM5MK+HmiSpmrIcy9g=",
+          "downloadSize": 14714104,
+          "narHash": "sha256-Nw4uJjrLkK6uwAgionlJdKlj1mjZz7tWbLiEN88SgjQ=",
+          "narSize": 77793808,
           "path": "/nix/store/jc4p2rahg1j0d6ff1bkxjykl83f1486n-ockam-0.77.0",
-          "valid": false
+          "references": [
+            "/nix/store/3iy1sxffrfdz7gcz2795pxwbxb5px809-libiconv-50",
+            "/nix/store/6fy4bc3cirn1mbn5y7da58shrfnfs9dx-apple-framework-CoreFoundation-11.0.0"
+          ],
+          "signatures": [
+            "flox-store-public-0:dFU+a+/B4EdIe36Oiiy80yyxQArBlZx9P9vGk6U7vA6mWxgjKt7e8BmXHFAJZRQ++L6ZNXu8islxYV3yTgGTAA=="
+          ],
+          "url": "nar/1n6b3jr9ma94ka3syc1r4gddbfqdqiyp0w6djfr70zjfp9csxjb6.nar.xz",
+          "valid": true
         }
       ]
     }
