@@ -5,8 +5,19 @@
       "cacheUrl": "https://cache.floxdev.com/",
       "narinfo": [
         {
+          "deriver": "/nix/store/abagsb11x6mk0fcl9yybgimwk7xxbnri-demo-dnd-server-0.0.0.drv",
+          "downloadHash": "sha256-NnCfrniaTg0TKOLQF2BOlughGYQxinUjgiE+IGakrWI=",
+          "downloadSize": 3124,
+          "narHash": "sha256-ww1gSznkLFs8TBB23J2uNlAJr5xHucmgMOHBzbnpc9U=",
+          "narSize": 9944,
           "path": "/nix/store/72znd1125c4xji0lcv99ss2rrb82lg97-demo-dnd-server-0.0.0",
-          "valid": false
+          "references": [
+            "/nix/store/5l4hnhaag6fncb6cpjimw2svbjb6dxjn-python3-3.10.12",
+            "/nix/store/72znd1125c4xji0lcv99ss2rrb82lg97-demo-dnd-server-0.0.0",
+            "/nix/store/vaibdw2zi029qw0mqxcbhg1zhzbvwxcv-bash-5.2-p15"
+          ],
+          "url": "nar/0qmdlik20gi1h8ipb2iihhcj3s4n9rh1gl72509hsklsg2p9yw1n.nar.xz",
+          "valid": true
         }
       ]
     }
@@ -21,7 +32,7 @@
     "storePaths": [
       "/nix/store/72znd1125c4xji0lcv99ss2rrb82lg97-demo-dnd-server-0.0.0"
     ],
-    "url": "git+ssh://git@github.com/flox-examples/floxpkgs?rev=477bbd99390eaed12bf6c6f4a4ee5e54fb44ded8"
+    "url": "git+ssh://git@github.com/flox-examples/floxpkgs?rev=1fee1132a10df7008167f1f8d7f24688e0de873c"
   },
   "eval": {
     "attrPath": [
@@ -116,22 +127,22 @@
   "source": {
     "locked": {
       "allRefs": true,
-      "lastModified": 1691181544,
-      "narHash": "sha256-GmM2XWZohmpOZmtuqKQIXoJtF3kpLxSGA2xESH9gDKc=",
-      "rev": "477bbd99390eaed12bf6c6f4a4ee5e54fb44ded8",
-      "revCount": 149,
+      "lastModified": 1691182189,
+      "narHash": "sha256-+bBz8YQLdolUdrAxVpP9rK29a6YuXGVBI8AVBu7zEes=",
+      "rev": "1fee1132a10df7008167f1f8d7f24688e0de873c",
+      "revCount": 150,
       "type": "git",
       "url": "ssh://git@github.com/flox-examples/floxpkgs"
     },
     "original": {
       "allRefs": true,
-      "rev": "477bbd99390eaed12bf6c6f4a4ee5e54fb44ded8",
+      "rev": "1fee1132a10df7008167f1f8d7f24688e0de873c",
       "type": "git",
       "url": "ssh://git@github.com/flox-examples/floxpkgs"
     },
     "remote": {
       "allRefs": true,
-      "rev": "477bbd99390eaed12bf6c6f4a4ee5e54fb44ded8",
+      "rev": "1fee1132a10df7008167f1f8d7f24688e0de873c",
       "type": "git",
       "url": "ssh://git@github.com/flox-examples/floxpkgs"
     }
