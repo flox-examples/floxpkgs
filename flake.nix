@@ -28,8 +28,8 @@
         #       use `context.capacitated` over `context.inputs`
         #       to ensure coherent dependencies.
         /*
-        ext-pkg = context: context.capacitated.my-project.packages.ext-pkg;
-        */
+         ext-pkg = context: context.capacitated.my-project.packages.ext-pkg;
+         */
       };
 
       config = {
@@ -38,13 +38,13 @@
         # `config.settings` allows additional systems to be configured
         # by overriding the default set
         /*
-        systems = [
-          "aarch64-darwin"
-          "aarch64-linux"
-          "x86_64-darwin"
-          "x86_64-linux"
-        ];
-        */
+         systems = [
+           "aarch64-darwin"
+           "aarch64-linux"
+           "x86_64-darwin"
+           "x86_64-linux"
+         ];
+         */
 
         nixpkgs-config = {
           # Unfree licenses are disallowed by default
@@ -65,10 +65,10 @@
           #       `context` - either in a package definition
           #       or `context.nixpkgs.slack`.
           /*
-          allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-            "slack"
-          ];
-          */
+           allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+             "slack"
+           ];
+           */
 
           # `config.projects` can be used to compose capacitated  package sets.
           # All packages defined in the imported projects will be merged
@@ -80,8 +80,8 @@
           #       composing such package sets ensures a single coherent set.
           projects = {
             /*
-            inherit (context.capacitated) my-project;
-            */
+             inherit (context.capacitated) my-project;
+             */
           };
 
           # If a package is already defined by an imported project
@@ -92,10 +92,31 @@
           # add the name of the package here, as instructed at build time.
           checkedExtensions = [
             /*
-            "some-package"
-            */
+             "some-package"
+             */
           ];
         };
       };
+      passthru =
+        # re-call yourself with overrides, will not work if using in-memory lockfile
+        let
+          hydraOverride = path: follows:
+            (
+              args.flox-floxpkgs.inputs.capacitor.lib.capacitor.callFlake
+              (builtins.readFile (args.self + "/flake.lock"))
+              args.self "" "" "root" {}
+              [
+                {
+                  path = path;
+                  follows = follows;
+                }
+              ]
+            )
+            .hydraJobs;
+        in {
+          "hydraJobsStaging" = hydraOverride ["flox-floxpkgs" "nixpkgs" "nixpkgs"] ["nixpkgs" "nixpkgs-staging"];
+          "hydraJobsUnstable" = hydraOverride ["flox-floxpkgs" "nixpkgs" "nixpkgs"] ["nixpkgs" "nixpkgs-unstable"];
+          "hydraJobsStable" = hydraOverride ["flox-floxpkgs" "nixpkgs" "nixpkgs"] ["nixpkgs" "nixpkgs-stable"];
+        };
     });
 }
