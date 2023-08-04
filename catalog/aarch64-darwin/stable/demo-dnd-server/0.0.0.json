@@ -5,19 +5,8 @@
       "cacheUrl": "https://cache.floxdev.com/",
       "narinfo": [
         {
-          "deriver": "/nix/store/j7wzj5jcmnxgx7gyf4w85x5409fczz7g-demo-dnd-server-0.0.0.drv",
-          "downloadHash": "sha256-5ZIIdqPCtXp30lDFygOiOCX8PoWeVn6C+/K1ylZUISg=",
-          "downloadSize": 3148,
-          "narHash": "sha256-boJJV0WfCkq7pajgw+SvqsyQwumVliFshzB4WY3aMEM=",
-          "narSize": 9992,
-          "path": "/nix/store/55hxb1ig7z6grfqph6qpsz1x7vrk5q7j-demo-dnd-server-0.0.0",
-          "references": [
-            "/nix/store/55hxb1ig7z6grfqph6qpsz1x7vrk5q7j-demo-dnd-server-0.0.0",
-            "/nix/store/m0fw0myf45rbsqkgvrnhm6dim036nqm3-python3-3.10.10",
-            "/nix/store/ncw57j62jmhsi8l019anl1k8a13g0ykw-bash-5.2-p15"
-          ],
-          "url": "nar/0a11aibcmdgjzf17wmlyhlzgq99ql81wmiahs9vpmdf2ldv0i4p5.nar.xz",
-          "valid": true
+          "path": "/nix/store/7zjj3qdpfjhs33kppqmpcp758d6l6kdb-demo-dnd-server-0.0.0",
+          "valid": false
         }
       ]
     }
@@ -30,9 +19,9 @@
       "demo-dnd-server"
     ],
     "storePaths": [
-      "/nix/store/55hxb1ig7z6grfqph6qpsz1x7vrk5q7j-demo-dnd-server-0.0.0"
+      "/nix/store/7zjj3qdpfjhs33kppqmpcp758d6l6kdb-demo-dnd-server-0.0.0"
     ],
-    "url": "git+ssh://git@github.com/flox-examples/demo-dnd-server.git?rev=83090b880795f8e838f14fac0c5de3189dfa4709"
+    "url": "git+ssh://git@github.com/flox-examples/floxpkgs?rev=daa1c3cfbce48efd47bf0582be59ca0000bb5685"
   },
   "eval": {
     "attrPath": [
@@ -40,7 +29,7 @@
       "aarch64-darwin",
       "demo-dnd-server"
     ],
-    "drvPath": "/nix/store/j7wzj5jcmnxgx7gyf4w85x5409fczz7g-demo-dnd-server-0.0.0.drv",
+    "drvPath": "/nix/store/a9lk2grnhp0s4gn1wi8q00vhlr2yw82k-demo-dnd-server-0.0.0.drv",
     "meta": {
       "available": true,
       "broken": false,
@@ -53,11 +42,14 @@
         "armv7a-linux",
         "armv7l-linux",
         "i686-linux",
+        "loongarch64-linux",
         "m68k-linux",
         "microblaze-linux",
         "microblazeel-linux",
-        "mipsel-linux",
+        "mips-linux",
+        "mips64-linux",
         "mips64el-linux",
+        "mipsel-linux",
         "powerpc64-linux",
         "powerpc64le-linux",
         "riscv32-linux",
@@ -84,11 +76,14 @@
         "armv7a-linux",
         "armv7l-linux",
         "i686-linux",
+        "loongarch64-linux",
         "m68k-linux",
         "microblaze-linux",
         "microblazeel-linux",
-        "mipsel-linux",
+        "mips-linux",
+        "mips64-linux",
         "mips64el-linux",
+        "mipsel-linux",
         "powerpc64-linux",
         "powerpc64le-linux",
         "riscv32-linux",
@@ -110,8 +105,8 @@
       "demo-dnd-server"
     ],
     "outputs": {
-      "dist": "/nix/store/hdrph8x61gvpr5rwn32fiyhii6pg9prs-demo-dnd-server-0.0.0-dist",
-      "out": "/nix/store/55hxb1ig7z6grfqph6qpsz1x7vrk5q7j-demo-dnd-server-0.0.0"
+      "dist": "/nix/store/vcpfv52702gs4afqh29y3bw9jg54wg64-demo-dnd-server-0.0.0-dist",
+      "out": "/nix/store/7zjj3qdpfjhs33kppqmpcp758d6l6kdb-demo-dnd-server-0.0.0"
     },
     "pname": "demo-dnd-server",
     "stability": "stable",
@@ -120,22 +115,25 @@
   },
   "source": {
     "locked": {
-      "lastModified": 1685050600,
-      "narHash": "sha256-YN/wXGfiNeCe0IYWEnRNlj1IRb7q9CMG6GP0fSkhvdg=",
-      "rev": "83090b880795f8e838f14fac0c5de3189dfa4709",
-      "revCount": 3,
+      "allRefs": true,
+      "lastModified": 1691183331,
+      "narHash": "sha256-CanlE0yQ0+UeiDiUids+bf0kF5m9pSHnv3pRYB/6K+o=",
+      "rev": "daa1c3cfbce48efd47bf0582be59ca0000bb5685",
+      "revCount": 151,
       "type": "git",
-      "url": "ssh://git@github.com/flox-examples/demo-dnd-server.git"
+      "url": "ssh://git@github.com/flox-examples/floxpkgs"
     },
     "original": {
-      "rev": "83090b880795f8e838f14fac0c5de3189dfa4709",
+      "allRefs": true,
+      "rev": "daa1c3cfbce48efd47bf0582be59ca0000bb5685",
       "type": "git",
-      "url": "ssh://git@github.com/flox-examples/demo-dnd-server.git"
+      "url": "ssh://git@github.com/flox-examples/floxpkgs"
     },
     "remote": {
-      "rev": "83090b880795f8e838f14fac0c5de3189dfa4709",
+      "allRefs": true,
+      "rev": "daa1c3cfbce48efd47bf0582be59ca0000bb5685",
       "type": "git",
-      "url": "ssh://git@github.com/flox-examples/demo-dnd-server.git"
+      "url": "ssh://git@github.com/flox-examples/floxpkgs"
     }
   },
   "version": 1
