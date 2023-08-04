@@ -6,7 +6,8 @@
   inputs.flox-floxpkgs.url = "github:flox/floxpkgs";
   inputs.hello-python.url = "github:flox-examples/hello-python";
   inputs.poetry-qiskit.url = "github:flox-examples/poetry-qiskit";
-  inputs.py-roberto.url = "github:flox-examples/py-roberto";
+  inputs.py-roberto.url = "git+ssh://git@github.com/flox-examples/py-roberto";
+  inputs.demo-dnd-server.url = "github:flox-examples/demo-dnd-server";
 
   # =================================
 
