@@ -1,12 +1,12 @@
 {pkgs ? (builtins.getFlake "nixpkgs").legacyPackages.x86_64-linux, ...}: let
   mkFlakeJobset = branch: stability: {
     description = "Packages built with nixpkgs ${pkgs.lib.toLower stability}";
-    checkinterval = "600";
+    checkinterval = "6000";
     enabled = "1";
-    schedulingshares = 100;
+    schedulingshares = 10;
     enableemail = false;
     emailoverride = "";
-    keepnr = 3;
+    keepnr = 1;
     hidden = false;
     type = 1;
     flake = "github:flox-examples/floxpkgs/${branch}";
